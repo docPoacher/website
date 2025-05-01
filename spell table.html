@@ -1,0 +1,421 @@
+<HTML>
+<head>
+	<style>
+		.sortable th {
+   cursor: pointer;
+}
+.sortable th.no-sort {
+   pointer-events: none;
+}
+.sortable th::after, 
+.sortable th::before {
+ transition: color 0.2s ease-in-out;
+ font-size: 1.2em;
+ color: transparent;
+}
+.sortable th::after {
+   margin-left: 3px;
+   content: '\025B8';
+}
+.sortable th:hover::after {
+   color: inherit;
+}
+.sortable th.dir-d::after {
+   color: inherit;
+   content: '\025BE';
+}
+.sortable th.dir-u::after {
+   color: inherit;
+   content: '\025B4';
+}
+</style>
+</head>
+
+<table class=\"sortable\"><thead>
+<tr><th class=\"\">Name</th><th class=\" dir-u \">Level</th><th class=\"\">Cantrip</th><th class=\"\">Ritual</th><th class=\"\">Concen</th><th class=\"\">School</th><th class=\"\">Casting Time</th><th class=\"\">Range</th><th class=\"\">V</th><th class=\"\">S</th><th class=\"\">M</th><th class=\"\">Duration</th></tr></thead><tbody>
+<tr><td>Create or Destroy Water</td><td>1st</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Expeditious Retreat</td><td>1st</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 bonus action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Feather Fall</td><td>1st</td><td></td><td></td><td></td><td>transmutation</td><td>1 reaction, which you take when you or a creature within 60 feet of you falls</td><td>60 feet</td><td>Y</td><td></td><td>Y</td><td>1 minute</td></tr>
+<tr><td>Goodberry</td><td>1st</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Jump</td><td>1st</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>1 minute</td></tr>
+<tr><td>Longstrider</td><td>1st</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Purify Food and Drink</td><td>1st</td><td></td><td>Y</td><td></td><td>transmutation</td><td>1 action</td><td>10 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>False Life</td><td>1st</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Inflict Wounds</td><td>1st</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Color Spray</td><td>1st</td><td></td><td></td><td></td><td>illusion</td><td>1 action</td><td>Self (15-foot cone)</td><td>Y</td><td>Y</td><td>Y</td><td>1 round</td></tr>
+<tr><td>Disguise Self</td><td>1st</td><td></td><td></td><td></td><td>illusion</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>1 hour</td></tr>
+<tr><td>Illusory Script</td><td>1st</td><td></td><td>Y</td><td></td><td>illusion</td><td>1 minute</td><td>Touch</td><td></td><td>Y</td><td>Y</td><td>10 days</td></tr>
+<tr><td>Silent Image</td><td>1st</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Burning Hands</td><td>1st</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>Self (15-foot cone)</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Cure Wounds</td><td>1st</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Divine Favor</td><td>1st</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 bonus action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Faerie Fire</td><td>1st</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>60 feet</td><td>Y</td><td></td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Guiding Bolt</td><td>1st</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>1 round</td></tr>
+<tr><td>Healing Word</td><td>1st</td><td></td><td></td><td></td><td>evocation</td><td>1 bonus action</td><td>60 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Hellish Rebuke</td><td>1st</td><td></td><td></td><td></td><td> evocation</td><td>1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Magic Missile</td><td>1st</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Thunderwave</td><td>1st</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>Self (15-foot cube)</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Animal Friendship</td><td>1st</td><td></td><td></td><td></td><td> enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Bane</td><td>1st</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Bless</td><td>1st</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Charm Person</td><td>1st</td><td></td><td></td><td></td><td>enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>1 hour</td></tr>
+<tr><td>Command</td><td>1st</td><td></td><td></td><td></td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td></td><td></td><td>1 round</td></tr>
+<tr><td>Heroism</td><td>1st</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Hideous Laughter</td><td>1st</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Sleep</td><td>1st</td><td></td><td></td><td></td><td>enchantment</td><td>1 action</td><td>90 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 minute</td></tr>
+<tr><td>Comprehend Languages</td><td>1st</td><td></td><td>Y</td><td></td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Detect Evil and Good</td><td>1st</td><td></td><td></td><td>Y</td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Detect Magic</td><td>1st</td><td></td><td>Y</td><td>Y</td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Detect Poison and Disease</td><td>1st</td><td></td><td>Y</td><td>Y</td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Hunter's Mark</td><td>1st</td><td></td><td></td><td>Y</td><td> divination</td><td>1 bonus action</td><td>90 feet</td><td>Y</td><td></td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Identify</td><td>1st</td><td></td><td>Y</td><td></td><td>divination</td><td>1 minute</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Speak with Animals</td><td>1st</td><td></td><td>Y</td><td></td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>10 minutes</td></tr>
+<tr><td>Entangle</td><td>1st</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>90 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Find Familiar</td><td>1st</td><td></td><td>Y</td><td></td><td> conjuration</td><td>1 hour</td><td>10 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Floating Disk</td><td>1st</td><td></td><td>Y</td><td></td><td>conjuration</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Fog Cloud</td><td>1st</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Grease</td><td>1st</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 minute</td></tr>
+<tr><td>Unseen Servant</td><td>1st</td><td></td><td>Y</td><td></td><td>conjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Alarm</td><td>1st</td><td></td><td>Y</td><td></td><td>abjuration</td><td>1 minute</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Mage Armor</td><td>1st</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Protection from Evil and Good</td><td>1st</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>p to 10 minutes</td></tr>
+<tr><td>Sanctuary</td><td>1st</td><td></td><td></td><td></td><td>abjuration</td><td>1 bonus action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 minute</td></tr>
+<tr><td>Shield</td><td>1st</td><td></td><td></td><td></td><td>abjuration</td><td>1 reaction, which you take when you are hit by an attack or targeted by the *magic missile* spell</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>1 round</td></tr>
+<tr><td>Shield of Faith</td><td>1st</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 bonus action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Alter Self</td><td>2nd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Barkskin</td><td>2nd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Darkvision</td><td>2nd</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Enhance Ability</td><td>2nd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour.</td></tr>
+<tr><td>Enlarge/Reduce</td><td>2nd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Heat Metal</td><td>2nd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Knock</td><td>2nd</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>60 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Levitate</td><td>2nd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Magic Weapon</td><td>2nd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 bonus action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Rope Trick</td><td>2nd</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Spider Climb</td><td>2nd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Spike Growth</td><td>2nd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Blindness/Deafness</td><td>2nd</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>30 feet</td><td>Y</td><td></td><td></td><td>1 minute</td></tr>
+<tr><td>Gentle Repose</td><td>2nd</td><td></td><td>Y</td><td></td><td>necromancy</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>10 days</td></tr>
+<tr><td>Ray of Enfeeblement</td><td>2nd</td><td></td><td></td><td>Y</td><td>necromancy</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Arcanist's Magic Aura</td><td>2nd</td><td></td><td></td><td></td><td>illusion</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Blur</td><td>2nd</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>Self</td><td>Y</td><td></td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Invisibility</td><td>2nd</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Magic Mouth</td><td>2nd</td><td></td><td>Y</td><td></td><td>illusion</td><td>1 minute</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Mirror Image</td><td>2nd</td><td></td><td></td><td></td><td>illusion</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>1 minute</td></tr>
+<tr><td>Silence</td><td>2nd</td><td></td><td>Y</td><td>Y</td><td>illusion</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Acid Arrow</td><td>2nd</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>90 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Branding Smite</td><td>2nd</td><td></td><td></td><td>Y</td><td> evocation</td><td>1 bonus action</td><td>Self</td><td>Y</td><td></td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Continual Flame</td><td>2nd</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Darkness</td><td>2nd</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>60 feet</td><td>Y</td><td></td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Flame Blade</td><td>2nd</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 bonus action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Gust of Wind</td><td>2nd</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>Self (60-foot line)</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Moonbeam</td><td>2nd</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Prayer of Healing</td><td>2nd</td><td></td><td></td><td></td><td>evocation</td><td>10 minutes</td><td>30 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Scorching Ray</td><td>2nd</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Shatter</td><td>2nd</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Spiritual Weapon</td><td>2nd</td><td></td><td></td><td></td><td>evocation</td><td>1 bonus action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>1 minute</td></tr>
+<tr><td>Animal Messenger</td><td>2nd</td><td></td><td>Y</td><td></td><td>enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Calm Emotions</td><td>2nd</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Enthrall</td><td>2nd</td><td></td><td></td><td></td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>1 minute</td></tr>
+<tr><td>Hold Person</td><td>2nd</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Suggestion</td><td>2nd</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td></td><td>Y</td><td>up to 8 hours</td></tr>
+<tr><td>Zone of Truth</td><td>2nd</td><td></td><td></td><td></td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>10 minutes</td></tr>
+<tr><td>Augury</td><td>2nd</td><td></td><td>Y</td><td></td><td>divination</td><td>1 minute</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Detect Thoughts</td><td>2nd</td><td></td><td></td><td>Y</td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Find Traps</td><td>2nd</td><td></td><td></td><td></td><td>divination</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Locate Animals or Plants</td><td>2nd</td><td></td><td>Y</td><td></td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Locate Object</td><td>2nd</td><td></td><td></td><td>Y</td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>See Invisibility</td><td>2nd</td><td></td><td></td><td></td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Find Steed</td><td>2nd</td><td></td><td></td><td></td><td>conjuration</td><td>10 minutes</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Flaming Sphere</td><td>2nd</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Misty Step</td><td>2nd</td><td></td><td></td><td></td><td>conjuration</td><td>1 bonus action</td><td>Self</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Web</td><td>2nd</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Aid</td><td>2nd</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Arcane Lock</td><td>2nd</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Lesser Restoration</td><td>2nd</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Pass without Trace</td><td>2nd</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Protection from Poison</td><td>2nd</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>1 hour</td></tr>
+<tr><td>Warding Bond</td><td>2nd</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Blink</td><td>3rd</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>1 minute</td></tr>
+<tr><td>Fly</td><td>3rd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Gaseous Form</td><td>3rd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Haste</td><td>3rd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Meld into Stone</td><td>3rd</td><td></td><td>Y</td><td></td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>8 hours</td></tr>
+<tr><td>Plant Growth</td><td>3rd</td><td></td><td></td><td></td><td>transmutation</td><td>1 action or 8 hours</td><td>150 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Slow</td><td>3rd</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Speak with Plants</td><td>3rd</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Self (30-foot radius)</td><td>Y</td><td>Y</td><td></td><td>10 minutes</td></tr>
+<tr><td>Water Breathing</td><td>3rd</td><td></td><td>Y</td><td></td><td>transmutation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Water Walk</td><td>3rd</td><td></td><td>Y</td><td></td><td>transmutation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Animate Dead</td><td>3rd</td><td></td><td></td><td></td><td>necromancy</td><td>1 minute</td><td>10 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Bestow Curse</td><td>3rd</td><td></td><td></td><td>Y</td><td>necromancy</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Revivify</td><td>3rd</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Speak with Dead</td><td>3rd</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>10 feet</td><td>Y</td><td>Y</td><td>Y</td><td>10 minutes</td></tr>
+<tr><td>Vampiric Touch</td><td>3rd</td><td></td><td></td><td>Y</td><td>necromancy</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Fear</td><td>3rd</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>Self (30-foot cone)</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Hypnotic Pattern</td><td>3rd</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>120 feet</td><td></td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Major Image</td><td>3rd</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Phantom Steed</td><td>3rd</td><td></td><td>Y</td><td></td><td>illusion</td><td>1 minute</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>1 hour</td></tr>
+<tr><td>Daylight</td><td>3rd</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>1 hour</td></tr>
+<tr><td>Fireball</td><td>3rd</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Lightning Bolt</td><td>3rd</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>Self (100-foot line)</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Mass Healing Word</td><td>3rd</td><td></td><td></td><td></td><td>evocation</td><td>1 bonus action</td><td>60 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Sending</td><td>3rd</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>Unlimited</td><td>Y</td><td>Y</td><td>Y</td><td>1 round</td></tr>
+<tr><td>Tiny Hut</td><td>3rd</td><td></td><td>Y</td><td></td><td>evocation</td><td>1 minute</td><td>Self (10-foot radius hemisphere)</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Wind Wall</td><td>3rd</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Clairvoyance</td><td>3rd</td><td></td><td></td><td>Y</td><td>divination</td><td>10 minutes</td><td>1 mile</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Tongues</td><td>3rd</td><td></td><td></td><td></td><td>divination</td><td>1 action</td><td>Touch</td><td>Y</td><td></td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Call Lightning</td><td>3rd</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Conjure Animals</td><td>3rd</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Create Food and Water</td><td>3rd</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Sleet Storm</td><td>3rd</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Spirit Guardians</td><td>3rd</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>Self (15-foot radius)</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Stinking Cloud</td><td>3rd</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>90 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Beacon of Hope</td><td>3rd</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Counterspell</td><td>3rd</td><td></td><td></td><td></td><td> abjuration</td><td>1 reaction, which you take when you see a creature within 60 feet of you casting a spell</td><td>60 feet</td><td></td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Dispel Magic</td><td>3rd</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Glyph of Warding</td><td>3rd</td><td></td><td></td><td></td><td>abjuration</td><td>1 hour</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled or triggered</td></tr>
+<tr><td>Magic Circle</td><td>3rd</td><td></td><td></td><td></td><td>abjuration</td><td>1 minute</td><td>10 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Nondetection</td><td>3rd</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Protection from Energy</td><td>3rd</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Remove Curse</td><td>3rd</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Control Water</td><td>4th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>300 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Fabricate</td><td>4th</td><td></td><td></td><td></td><td>transmutation</td><td>10 minutes</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Giant Insect</td><td>4th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Polymorph</td><td>4th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Stone Shape</td><td>4th</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Blight</td><td>4th</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Greater Invisibility</td><td>4th</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Hallucinatory Terrain</td><td>4th</td><td></td><td></td><td></td><td>illusion</td><td>10 minutes</td><td>300 feet</td><td>Y</td><td>Y</td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Phantasmal Killer</td><td>4th</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Fire Shield</td><td>4th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>10 minutes</td></tr>
+<tr><td>Ice Storm</td><td>4th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>300 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Resilient Sphere</td><td>4th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Wall of Fire</td><td>4th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Compulsion</td><td>4th</td><td></td><td></td><td>Y</td><td> enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Confusion</td><td>4th</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>90 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Dominate Beast</td><td>4th</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Arcane Eye</td><td>4th</td><td></td><td></td><td>Y</td><td>divination</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Divination</td><td>4th</td><td></td><td>Y</td><td></td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Locate Creature</td><td>4th</td><td></td><td></td><td>Y</td><td>divination</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Black Tentacles</td><td>4th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>90 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Conjure Minor Elementals</td><td>4th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 minute</td><td>90 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Conjure Woodland Beings</td><td>4th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Dimension Door</td><td>4th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>500 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Faithful Hound</td><td>4th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Guardian of Faith</td><td>4th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>30 feet</td><td>Y</td><td></td><td></td><td>8 hours</td></tr>
+<tr><td>Secret Chest</td><td>4th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Banishment</td><td>4th</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Death Ward</td><td>4th</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>8 hours</td></tr>
+<tr><td>Freedom of Movement</td><td>4th</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Private Sanctum</td><td>4th</td><td></td><td></td><td></td><td>abjuration</td><td>10 minutes</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Stoneskin</td><td>4th</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Animate Objects</td><td>5th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Awaken</td><td>5th</td><td></td><td></td><td></td><td>transmutation</td><td>8 hours</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Passwall</td><td>5th</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Reincarnate</td><td>5th</td><td></td><td></td><td></td><td>transmutation</td><td>1 hour</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Telekinesis</td><td>5th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Contagion</td><td>5th</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>Touch</td><td></td><td>Y</td><td></td><td>7 days</td></tr>
+<tr><td>Raise Dead</td><td>5th</td><td></td><td></td><td></td><td>necromancy</td><td>1 hour</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Creation</td><td>5th</td><td></td><td></td><td></td><td>illusion</td><td>1 minute</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Special</td></tr>
+<tr><td>Dream</td><td>5th</td><td></td><td></td><td></td><td>illusion</td><td>1 minute</td><td>Special</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Mislead</td><td>5th</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>Self</td><td></td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Seeming</td><td>5th</td><td></td><td></td><td></td><td>illusion</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>8 hours</td></tr>
+<tr><td>Arcane Hand</td><td>5th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Cone of Cold</td><td>5th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>Self (60-foot cone)</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Flame Strike</td><td>5th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Hallow</td><td>5th</td><td></td><td></td><td></td><td>evocation</td><td>24 hours</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Mass Cure Wounds</td><td>5th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Wall of Force</td><td>5th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Wall of Stone</td><td>5th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Dominate Person</td><td>5th</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Geas</td><td>5th</td><td></td><td></td><td></td><td>enchantment</td><td>1 minute</td><td>60 feet</td><td>Y</td><td></td><td></td><td>30 days</td></tr>
+<tr><td>Hold Monster</td><td>5th</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>90 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Modify Memory</td><td>5th</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Commune</td><td>5th</td><td></td><td>Y</td><td></td><td>divination</td><td>1 minute</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>1 minute</td></tr>
+<tr><td>Commune with Nature</td><td>5th</td><td></td><td>Y</td><td></td><td>divination</td><td>1 minute</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Contact Other Plane</td><td>5th</td><td></td><td>Y</td><td></td><td>divination</td><td>1 minute</td><td>Self</td><td>Y</td><td></td><td></td><td>1 minute</td></tr>
+<tr><td>Legend Lore</td><td>5th</td><td></td><td></td><td></td><td>divination</td><td>10 minutes</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Scrying</td><td>5th</td><td></td><td></td><td>Y</td><td>divination</td><td>10 minutes</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Telepathic Bond</td><td>5th</td><td></td><td>Y</td><td></td><td>divination</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Cloudkill</td><td>5th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Conjure Elemental</td><td>5th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 minute</td><td>90 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Insect Plague</td><td>5th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>300 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Teleportation Circle</td><td>5th</td><td></td><td></td><td></td><td>conjuration</td><td>1 minute</td><td>10 feet</td><td>Y</td><td></td><td>Y</td><td>1 round</td></tr>
+<tr><td>Tree Stride</td><td>5th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Antilife Shell</td><td>5th</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>Self (10-foot radius)</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Dispel Evil and Good</td><td>5th</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Greater Restoration</td><td>5th</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Planar Binding</td><td>5th</td><td></td><td></td><td></td><td>abjuration</td><td>1 hour</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Disintegrate</td><td>6th</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Flesh to Stone</td><td>6th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Move Earth</td><td>6th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 2 hours</td></tr>
+<tr><td>Wind Walk</td><td>6th</td><td></td><td></td><td></td><td>transmutation</td><td>1 minute</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Circle of Death</td><td>6th</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Create Undead</td><td>6th</td><td></td><td></td><td></td><td>necromancy</td><td>1 minute</td><td>10 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Eyebite</td><td>6th</td><td></td><td></td><td>Y</td><td>necromancy</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Harm</td><td>6th</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Magic Jar</td><td>6th</td><td></td><td></td><td></td><td>necromancy</td><td>1 minute</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Programmed Illusion</td><td>6th</td><td></td><td></td><td></td><td>illusion</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Blade Barrier</td><td>6th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>90 feet</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Chain Lightning</td><td>6th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Contingency</td><td>6th</td><td></td><td></td><td></td><td>evocation</td><td>10 minutes</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>10 days</td></tr>
+<tr><td>Freezing Sphere</td><td>6th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>300 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Heal</td><td>6th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Sunbeam</td><td>6th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>Self (60-foot line)</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Wall of Ice</td><td>6th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Irresistible Dance</td><td>6th</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>30 feet</td><td>Y</td><td></td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Mass Suggestion</td><td>6th</td><td></td><td></td><td></td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td></td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Find the Path</td><td>6th</td><td></td><td></td><td>Y</td><td>divination</td><td>1 minute</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 day</td></tr>
+<tr><td>True Seeing</td><td>6th</td><td></td><td></td><td></td><td>divination</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Conjure Fey</td><td>6th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 minute</td><td>90 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Heroes' Feast</td><td>6th</td><td></td><td></td><td></td><td>conjuration</td><td>10 minutes</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Instant Summons</td><td>6th</td><td></td><td>Y</td><td></td><td>conjuration</td><td>1 minute</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Planar Ally</td><td>6th</td><td></td><td></td><td></td><td>conjuration</td><td>10 minutes</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Transport via Plants</td><td>6th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>10 feet</td><td>Y</td><td>Y</td><td></td><td>1 round</td></tr>
+<tr><td>Wall of Thorns</td><td>6th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 10 minutes</td></tr>
+<tr><td>Word of Recall</td><td>6th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>5 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Forbiddance</td><td>6th</td><td></td><td>Y</td><td></td><td>abjuration</td><td>10 minutes</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>1 day</td></tr>
+<tr><td>Globe of Invulnerability</td><td>6th</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>Self (10-foot radius)</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Guards and Wards</td><td>6th</td><td></td><td></td><td></td><td>abjuration</td><td>10 minutes</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Etherealness</td><td>7th</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>Up to 8 hours</td></tr>
+<tr><td>Regenerate</td><td>7th</td><td></td><td></td><td></td><td>transmutation</td><td>1 minute</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Reverse Gravity</td><td>7th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>100 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Sequester</td><td>7th</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Finger of Death</td><td>7th</td><td></td><td></td><td></td><td>necromancy</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Resurrection</td><td>7th</td><td></td><td></td><td></td><td>necromancy</td><td>1 hour</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Mirage Arcane</td><td>7th</td><td></td><td></td><td></td><td>illusion</td><td>10 minutes</td><td>Sight</td><td>Y</td><td>Y</td><td></td><td>10 days</td></tr>
+<tr><td>Project Image</td><td>7th</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>500 miles</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 day</td></tr>
+<tr><td>Simulacrum</td><td>7th</td><td></td><td></td><td></td><td>illusion</td><td>12 hours</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Arcane Sword</td><td>7th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Delayed Blast Fireball</td><td>7th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Divine Word</td><td>7th</td><td></td><td></td><td></td><td>evocation</td><td>1 bonus action</td><td>30 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Fire Storm</td><td>7th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Forcecage</td><td>7th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>100 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Prismatic Spray</td><td>7th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>Self (60-foot cone)</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Conjure Celestial</td><td>7th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 minute</td><td>90 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Magnificent Mansion</td><td>7th</td><td></td><td></td><td></td><td>conjuration</td><td>1 minute</td><td>300 feet</td><td>Y</td><td>Y</td><td>Y</td><td>24 hours</td></tr>
+<tr><td>Plane Shift</td><td>7th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Teleport</td><td>7th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>10 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Symbol</td><td>7th</td><td></td><td></td><td></td><td>abjuration</td><td>1 minute</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled or triggered</td></tr>
+<tr><td>Animal Shapes</td><td>8th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>up to 24 hours</td></tr>
+<tr><td>Control Weather</td><td>8th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>10 minutes</td><td>Self (5-mile radius)</td><td>Y</td><td>Y</td><td>Y</td><td>up to 8 hours</td></tr>
+<tr><td>Glibness</td><td>8th</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Self</td><td>Y</td><td></td><td></td><td>1 hour</td></tr>
+<tr><td>Clone</td><td>8th</td><td></td><td></td><td></td><td>necromancy</td><td>1 hour</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Earthquake</td><td>8th</td><td></td><td></td><td>Y</td><td>evocation</td><td>1 action</td><td>500 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Sunburst</td><td>8th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Antipathy/Sympathy</td><td>8th</td><td></td><td></td><td></td><td>enchantment</td><td>1 hour</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>10 days</td></tr>
+<tr><td>Dominate Monster</td><td>8th</td><td></td><td></td><td>Y</td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 hour</td></tr>
+<tr><td>Feeblemind</td><td>8th</td><td></td><td></td><td></td><td>enchantment</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Power Word Stun</td><td>8th</td><td></td><td></td><td></td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Demiplane</td><td>8th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>60 feet</td><td></td><td>Y</td><td></td><td>1 hour</td></tr>
+<tr><td>Incendiary Cloud</td><td>8th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>150 feet</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Maze</td><td>8th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>up to 10 minutes</td></tr>
+<tr><td>Antimagic Field</td><td>8th</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>Self (10-foot radius sphere)</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Holy Aura</td><td>8th</td><td></td><td></td><td>Y</td><td>abjuration</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Mind Blank</td><td>8th</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>24 hours</td></tr>
+<tr><td>Shapechange</td><td>9th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Time Stop</td><td>9th</td><td></td><td></td><td></td><td>transmutation</td><td>1 action</td><td>Self</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>True Polymorph</td><td>9th</td><td></td><td></td><td>Y</td><td>transmutation</td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 hour</td></tr>
+<tr><td>Astral Projection</td><td>9th</td><td></td><td></td><td></td><td>necromancy</td><td>1 hour</td><td>10 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Special</td></tr>
+<tr><td>True Resurrection</td><td>9th</td><td></td><td></td><td></td><td>necromancy</td><td>1 hour</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Weird</td><td>9th</td><td></td><td></td><td>Y</td><td>illusion</td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>up to one minute</td></tr>
+<tr><td>Mass Heal</td><td>9th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Meteor Swarm</td><td>9th</td><td></td><td></td><td></td><td>evocation</td><td>1 action</td><td>1 mile</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Power Word Kill</td><td>9th</td><td></td><td></td><td></td><td>enchantment</td><td>1 action</td><td>60 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Foresight</td><td>9th</td><td></td><td></td><td></td><td>divination</td><td>1 minute</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>8 hours</td></tr>
+<tr><td>Gate</td><td>9th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Storm of Vengeance</td><td>9th</td><td></td><td></td><td>Y</td><td>conjuration</td><td>1 action</td><td>Sight</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>Wish</td><td>9th</td><td></td><td></td><td></td><td>conjuration</td><td>1 action</td><td>Self</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Imprisonment</td><td>9th</td><td></td><td></td><td></td><td>abjuration</td><td>1 minute</td><td>30 feet</td><td>Y</td><td>Y</td><td>Y</td><td>Until dispelled</td></tr>
+<tr><td>Prismatic Wall</td><td>9th</td><td></td><td></td><td></td><td>abjuration</td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>10 minutes</td></tr>
+<tr><td>Druidcraft</td><td>cantrip</td><td></td><td></td><td></td><td>Transmutation </td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Mending</td><td>cantrip</td><td></td><td></td><td></td><td>Transmutation </td><td>1 minute</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>Instantaneous</td></tr>
+<tr><td>Message</td><td>cantrip</td><td></td><td></td><td></td><td>Transmutation </td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>1 round</td></tr>
+<tr><td>Prestidigitation</td><td>cantrip</td><td></td><td></td><td></td><td>Transmutation </td><td>1 action</td><td>10 feet</td><td>Y</td><td>Y</td><td></td><td>Up to 1 hour</td></tr>
+<tr><td>Shillelagh</td><td>cantrip</td><td></td><td></td><td></td><td>Transmutation </td><td>1 bonus action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>1 minute</td></tr>
+<tr><td>Thaumaturgy</td><td>cantrip</td><td></td><td></td><td></td><td>Transmutation </td><td>1 action</td><td>30 feet</td><td>Y</td><td></td><td></td><td>Up to 1 minute</td></tr>
+<tr><td>Chill Touch</td><td>cantrip</td><td></td><td></td><td></td><td>Necromancy </td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>1 round</td></tr>
+<tr><td>Spare the Dying</td><td>cantrip</td><td></td><td></td><td></td><td>Necromancy </td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Minor Illusion</td><td>cantrip</td><td></td><td></td><td></td><td>Illusion </td><td>1 action</td><td>30 feet</td><td></td><td>Y</td><td>Y</td><td>1 minute</td></tr>
+<tr><td>Dancing Lights</td><td>cantrip</td><td></td><td></td><td>Y</td><td>Evocation </td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr>
+<tr><td>Eldritch Blast</td><td>cantrip</td><td></td><td></td><td></td><td>Evocation </td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Fire Bolt</td><td>cantrip</td><td></td><td></td><td></td><td>Evocation </td><td>1 action</td><td>120 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Light</td><td>cantrip</td><td></td><td></td><td></td><td>Evocation </td><td>1 action</td><td>Touch</td><td>Y</td><td></td><td>Y</td><td>1 hour</td></tr>
+<tr><td>Ray of Frost</td><td>cantrip</td><td></td><td></td><td></td><td>Evocation </td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Sacred Flame</td><td>cantrip</td><td></td><td></td><td></td><td>Evocation </td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Shocking Grasp</td><td>cantrip</td><td></td><td></td><td></td><td>Evocation </td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Vicious Mockery</td><td>cantrip</td><td></td><td></td><td></td><td>Enchantment </td><td>1 action</td><td>60 feet</td><td>Y</td><td></td><td></td><td>Instantaneous</td></tr>
+<tr><td>Guidance</td><td>cantrip</td><td></td><td></td><td>Y</td><td>Divination </td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td></td><td>up to 1 minute</td></tr>
+<tr><td>True Strike</td><td>cantrip</td><td></td><td></td><td>Y</td><td>Divination </td><td>1 action</td><td>30 feet</td><td></td><td>Y</td><td></td><td>up to 1 round</td></tr>
+<tr><td>Acid Splash</td><td>cantrip</td><td></td><td></td><td></td><td>Conjuration </td><td>1 action</td><td>60 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Mage Hand</td><td>cantrip</td><td></td><td></td><td></td><td>Conjuration </td><td>1 action</td><td>30 feet</td><td>Y</td><td>Y</td><td></td><td>1 minute</td></tr>
+<tr><td>Poison Spray</td><td>cantrip</td><td></td><td></td><td></td><td>Conjuration </td><td>1 action</td><td>10 feet</td><td>Y</td><td>Y</td><td></td><td>Instantaneous</td></tr>
+<tr><td>Produce Flame</td><td>cantrip</td><td></td><td></td><td></td><td>Conjuration </td><td>1 action</td><td>Self</td><td>Y</td><td>Y</td><td></td><td>10 minutes</td></tr>
+<tr><td>Resistance</td><td>cantrip</td><td></td><td></td><td>Y</td><td>Abjuration </td><td>1 action</td><td>Touch</td><td>Y</td><td>Y</td><td>Y</td><td>up to 1 minute</td></tr></tbody></table>"
+
+<br>
+
+<script>
+	////////////////////////// html table sorting
+document.addEventListener('click', function (e) {
+  try {
+    function findElementRecursive(element, tag) {
+      return element.nodeName === tag ? element : 
+       findElementRecursive(element.parentNode, tag)
+    }
+    var descending_th_class = ' dir-d '
+    var ascending_th_class = ' dir-u '
+    var ascending_table_sort_class = 'asc'
+    var regex_dir = / dir-(u|d) /
+    var regex_table = /\bsortable\b/
+    var alt_sort = e.shiftKey || e.altKey
+    var element = findElementRecursive(e.target, 'TH')
+    var tr = findElementRecursive(element, 'TR')
+    var table = findElementRecursive(tr, 'TABLE')
+    function reClassify(element, dir) {
+      element.className = element.className.replace(regex_dir, '') + dir
+    }
+    function getValue(element) {
+      return (
+        (alt_sort && element.getAttribute('data-sort-alt')) || 
+      element.getAttribute('data-sort') || element.innerText
+      )
+    }
+    if (regex_table.test(table.className)) {
+      var column_index
+      var nodes = tr.cells
+      for (var i = 0; i < nodes.length; i++) {
+        if (nodes[i] === element) {
+          column_index = element.getAttribute('data-sort-col') || i
+        } else {
+          reClassify(nodes[i], '')
+        }
+      }
+      var dir = descending_th_class
+      if (
+        element.className.indexOf(descending_th_class) !== -1 ||
+        (table.className.indexOf(ascending_table_sort_class) !== -1 &&
+          element.className.indexOf(ascending_th_class) == -1)
+      ) {
+        dir = ascending_th_class
+      }
+      reClassify(element, dir)
+      var org_tbody = table.tBodies[0]
+      var rows = [].slice.call(org_tbody.rows, 0)
+      var reverse = dir === ascending_th_class
+      rows.sort(function (a, b) {
+        var x = getValue((reverse ? a : b).cells[column_index])
+        var y = getValue((reverse ? b : a).cells[column_index])
+        return isNaN(x - y) ? x.localeCompare(y) : x - y
+      })
+      var clone_tbody = org_tbody.cloneNode()
+      while (rows.length) {
+        clone_tbody.appendChild(rows.splice(0, 1)[0])
+      }
+      table.replaceChild(clone_tbody, org_tbody)
+    }
+  } catch (error) {
+  }
+});</script>
+</HTML>
+
