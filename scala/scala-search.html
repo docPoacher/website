@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,25 +21,18 @@
     </style>
     <title>Scala Scale Search</title>
 
-    <!--
-    if code broke maybe try this:
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css" integrity="sha384-cya1SKeBBe5YTpHgx4WoICmzqkoHTxoGqjPySUq2nLksbJ/JiKXX2RmhyLz6jwST" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
-    -->
-    
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css" integrity="sha384-cya1SKeBBe5YTpHgx4WoICmzqkoHTxoGqjPySUq2nLksbJ/JiKXX2RmhyLz6jwST" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js" integrity="sha384-Udt767MMeKelGRBxaCfxX88YDLbViYdQ7T/gkRoB197Jf+OviZ+lsaRAOpS/MIjf" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js" integrity="sha384-Udt767MMeKelGRBxaCfxX88YDLbViYdQ7T/gkRoB197Jf+OviZ+lsaRAOpS/MIjf" crossorigin="anonymous"></script>
 
 
-    
+
 </head>
 <body>
 <div id="toast"></div>
+
 <table id="table" class="display">
     <thead>
         <tr>
@@ -52,8 +44,7 @@
 </table>
 <br>
 <strong>HOW TO USE:</strong> Fill out search for terms related to scale you wish to know the name of such as "12 tet limit" then click on the name of the scale you would like and the browser will copy the name to your clipboard
-<br>
-<br>
+<br><br>
 scale information taken from: <a href="https://www.huygens-fokker.org/docs/scalesdir.txt">https://www.huygens-fokker.org/docs/scalesdir.txt</a>
 <br>
 official Scala home page: <a href="https://www.huygens-fokker.org/scala/">https://www.huygens-fokker.org/scala/</a>
@@ -94,11 +85,11 @@ fetch('https://docpoacher.github.io/website/scala/data.json')
             columns: [
                 {
                     data: 'name',
-                    render: function(data) {
-                        return `<span class="copy-name" style="cursor:pointer; ">
-                                    ${data}
-                                </span>`;
-                }
+                        render: function(data) {
+                            return `<span class="copy-name" data-name="${data}">
+                                        ${data}
+                                    </span>`;
+                        }
     },
     { data: 'size' },
     { data: 'description' }
@@ -106,14 +97,14 @@ fetch('https://docpoacher.github.io/website/scala/data.json')
         });
     })
     .catch(err => console.error("ERROR:", err));
+    
 $('#table').on('click', '.copy-name', function () {
-    const text = $(this).text();
+    const text = $(this).data('name');
 
     navigator.clipboard.writeText(text).then(() => {
         showToast(`Copied "${text}" to clipboard`);
     });
 });
-
 </script>
 
 </body>
